@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/gussamer/fflib-apex-common-samplecode/issues"
   },
-  "homepage": "https://github.com/gussamer/fflib-apex-common-samplecode#readme"
+  "homepage": "https://github.com/gussamer/fflib-apex-common-samplecode#readme",
+  "dependencies": {
+    "npm-fflib-common": "^1.0.11"
+  }
 }
