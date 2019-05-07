@@ -1,3 +1,12 @@
+NPM SFDX Package Dependancy Resolution Proof of Concept
+1. Clone repo
+1. Open git bash on windows with npm... and sfdx... and a default devhub org*
+1. Behold splendor
+
+*May work on linux though has not been tested
+
+Original README below
+=================================
 FinancialForce Apex Common Sample
 =================================
 
