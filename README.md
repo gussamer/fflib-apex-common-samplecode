@@ -8,7 +8,7 @@ NPM SFDX Package Dependancy Resolution Proof of Concept
   npm run setup
   ```
   
-1. Behold splendor
+5. Behold splendor
 
 *May work on linux though has not been tested
 
