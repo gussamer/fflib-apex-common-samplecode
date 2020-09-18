@@ -1,0 +1,10 @@
+{
+    "orgName": "apex-common-samplecode",
+    "edition": "Developer",
+    "features": ["API","DebugApex","AuthorApex"],
+    "settings": {
+        "orgPreferenceSettings": {
+            "s1DesktopEnabled": true
+        }
+    }
+}

@@ -3,16 +3,6 @@
     <customSettingsType>Hierarchy</customSettingsType>
     <enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>false</enableFeeds>
-    <fields>
-        <fullName>DiscountType__c</fullName>
-        <externalId>false</externalId>
-        <label>Discount Type</label>
-        <length>32</length>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
     <label>Opportunity Settings</label>
     <visibility>Public</visibility>
 </CustomObject>

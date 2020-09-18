@@ -54,51 +54,6 @@
     <enableReports>false</enableReports>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <fields>
-        <fullName>DeliveryHours__c</fullName>
-        <externalId>false</externalId>
-        <label>Delivery Hours</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>PreparationHours__c</fullName>
-        <externalId>false</externalId>
-        <label>Preparation Hours</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>TrainingCost__c</fullName>
-        <externalId>false</externalId>
-        <label>Training Cost</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>WorkOrder__c</fullName>
-        <externalId>false</externalId>
-        <label>Work Order</label>
-        <referenceTo>WorkOrder__c</referenceTo>
-        <relationshipLabel>Training Work Items</relationshipLabel>
-        <relationshipName>TrainingWorkItems</relationshipName>
-        <relationshipOrder>0</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
-        <trackTrending>false</trackTrending>
-        <type>MasterDetail</type>
-        <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields>
     <label>Training Work Item</label>
     <nameField>
         <label>Testing Work Name</label>
