@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/gussamer/fflib-apex-common-samplecode#readme",
   "dependencies": {
-    "npm-fflib-common": "^1.0.13"
+    "npm-fflib-common": "^1.0.15"
   }
 }

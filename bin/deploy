@@ -8,5 +8,5 @@ if [ "$DXPM_CURRENT_PACKAGE_NAME" = "" ]; then
   DXPM_CURRENT_PACKAGE_NAME="$DXPM_SETUP_PACKAGE_NAME"
 fi
 echo "[+] deploying $DXPM_CURRENT_PACKAGE_NAME metadata to scratch org $DXPM_SETUP_PACKAGE_NAME"
-sfdx force:source:deploy -w 10 -u "$DXPM_SETUP_PACKAGE_NAME" && wait
+sfdx force:source:deploy -p $PWD/sfdx-source/apex-common-samplecode -w 10 -u "$DXPM_SETUP_PACKAGE_NAME" && wait
 echo "[+] finished deploying $DXPM_CURRENT_PACKAGE_NAME metadata to scratch org $DXPM_SETUP_PACKAGE_NAME"
