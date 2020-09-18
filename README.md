@@ -1,7 +1,14 @@
 NPM SFDX Package Dependancy Resolution Proof of Concept
-1. Clone repo
 1. Open git bash on windows with npm... and sfdx... and a default devhub org*
-1. Behold splendor
+1. Clone repo
+1. cd into repo
+1. Run
+
+  ```bash
+  npm run setup
+  ```
+  
+5. Behold splendor
 
 *May work on linux though has not been tested
 
