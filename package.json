@@ -2,15 +2,6 @@
   "name": "npm-fflib-samplecode",
   "version": "1.0.0",
   "description": "fflib sample code",
-  "scripts": {
-    "pretest": "bash ./bin/setup",
-    "test": "bash ./bin/test",
-    "posttest": "bash ./bin/clean",
-    "preinstall": "bash ./bin/preinstall",
-    "postinstall": "bash ./bin/postinstall",
-    "setup": "bash ./bin/setup",
-    "clean": "bash ./bin/clean"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gussamer/fflib-apex-common-samplecode.git"
@@ -24,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/gussamer/fflib-apex-common-samplecode/issues"
   },
-  "homepage": "https://github.com/gussamer/fflib-apex-common-samplecode#readme",
-  "dependencies": {
-    "npm-fflib-common": "^1.0.15"
-  }
+  "homepage": "https://github.com/gussamer/fflib-apex-common-samplecode#readme"
 }
