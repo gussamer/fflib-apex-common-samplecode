@@ -17,12 +17,6 @@ NPM SFDX Package Dependancy Resolution Proof of Concept
   ```bash
   npm install qfpm --save
   ```
-  
-1. Install the npm-fflib-common dependancy
-
-  ```bash
-  npm install npm-fflib-common --save
-  ```
 
 1. Setup for development
 
@@ -30,7 +24,21 @@ NPM SFDX Package Dependancy Resolution Proof of Concept
   npm run setup
   ```
 
-1. You now have a scratch org with multiple layers of dependancies resolved setup
+1. Oh no this package has multi-layered dependancies needed to install!
+  
+1. Install the npm-fflib-common dependancy
+
+  ```bash
+  npm install npm-fflib-common --save
+  ```
+
+1. Setup again with dependacies installed
+
+  ```bash
+  npm run setup
+  ```
+
+1. You now have a scratch org ready for development with multiple layers of dependancies resolved
 
 *May work on linux though has not been tested
 
