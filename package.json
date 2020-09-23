@@ -1,19 +1,36 @@
 {
-  "name": "npm-fflib-samplecode",
-  "version": "1.0.0",
-  "description": "fflib sample code",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gussamer/fflib-apex-common-samplecode.git"
-  },
-  "keywords": [
-    "salesforce",
-    "fflib",
-    "sample"
-  ],
-  "author": "Not Me",
-  "bugs": {
-    "url": "https://github.com/gussamer/fflib-apex-common-samplecode/issues"
-  },
-  "homepage": "https://github.com/gussamer/fflib-apex-common-samplecode#readme"
+    "name": "npm-fflib-samplecode",
+    "version": "1.0.0",
+    "description": "fflib sample code",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gussamer/fflib-apex-common-samplecode.git"
+    },
+    "keywords": [
+        "salesforce",
+        "fflib",
+        "sample"
+    ],
+    "author": "Not Me",
+    "bugs": {
+        "url": "https://github.com/gussamer/fflib-apex-common-samplecode/issues"
+    },
+    "homepage": "https://github.com/gussamer/fflib-apex-common-samplecode#readme",
+    "scripts": {
+        "build": "bash ./bin/qfpm/build",
+        "clean": "bash ./bin/qfpm/clean",
+        "deploy": "bash ./bin/qfpm/deploy",
+        "getprojectname": "bash ./bin/qfpm/getprojectname",
+        "isscratched": "bash ./bin/qfpm/isscratched",
+        "postinstall": "bash ./bin/qfpm/postinstall",
+        "preinstall": "bash ./bin/qfpm/preinstall",
+        "push": "bash ./bin/qfpm/push",
+        "scratch": "bash ./bin/qfpm/scratch",
+        "setup": "bash ./bin/qfpm/setup",
+        "test": "bash ./bin/qfpm/test"
+    },
+    "dependencies": {
+        "npm-fflib-common": "^1.0.17",
+        "qfpm": "^1.0.10"
+    }
 }
