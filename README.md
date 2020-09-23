@@ -1,14 +1,36 @@
 NPM SFDX Package Dependancy Resolution Proof of Concept
 1. Open git bash on windows with npm... and sfdx... and a default devhub org*
 1. Clone repo
+
+  ```bash
+  git clone [URL]
+  ```
+
 1. cd into repo
-1. Run
+
+  ```bash
+  cd fflib-apex-common-samplecode
+  ```
+
+1. Install the QRFDev Package Manager tools
+
+  ```bash
+  npm install qfpm --save
+  ```
+  
+1. Install the npm-fflib-common dependancy
+
+  ```bash
+  npm install npm-fflib-common --save
+  ```
+
+1. Setup for development
 
   ```bash
   npm run setup
   ```
-  
-5. Behold splendor
+
+1. You now have a scratch org with multiple layers of dependancies resolved setup
 
 *May work on linux though has not been tested
 
