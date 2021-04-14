@@ -15,5 +15,23 @@
     "bugs": {
         "url": "https://github.com/gussamer/fflib-apex-common-samplecode/issues"
     },
-    "homepage": "https://github.com/gussamer/fflib-apex-common-samplecode#readme"
+    "homepage": "https://github.com/gussamer/fflib-apex-common-samplecode#readme",
+    "scripts": {
+        "build": "bash ./bin/qfpm/build",
+        "clean": "bash ./bin/qfpm/clean",
+        "deploy": "bash ./bin/qfpm/deploy",
+        "getprojectname": "bash ./bin/qfpm/getprojectname",
+        "isscratched": "bash ./bin/qfpm/isscratched",
+        "postinstall": "bash ./bin/qfpm/postinstall",
+        "preinstall": "bash ./bin/qfpm/preinstall",
+        "push": "bash ./bin/qfpm/push",
+        "scratch": "bash ./bin/qfpm/scratch",
+        "setup": "bash ./bin/qfpm/setup",
+        "test": "bash ./bin/qfpm/test",
+        "isqfpm": "bash ./bin/qfpm/isqfpm"
+    },
+    "dependencies": {
+        "npm-fflib-common": "^1.0.22",
+        "qfpm": "^1.0.17"
+    }
 }
