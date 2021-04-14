@@ -15,7 +15,7 @@ NPM SFDX Package Dependancy Resolution Proof of Concept
 4. Install the QRFDev Package Manager tools
 
   ```bash
-  npm install qfpm --save
+  npm install qfpm --save --only=prod
   ```
 
 5. Setup for development
@@ -29,7 +29,7 @@ NPM SFDX Package Dependancy Resolution Proof of Concept
 7. Install the npm-fflib-common dependancy
 
   ```bash
-  npm install npm-fflib-common --save
+  npm install npm-fflib-common --save --only=prod
   ```
 
 8. Setup again with dependacies installed
