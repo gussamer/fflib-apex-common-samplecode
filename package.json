@@ -31,7 +31,7 @@
         "isqfpm": "bash ./bin/qfpm/isqfpm"
     },
     "dependencies": {
-        "npm-fflib-common": "^1.0.22",
+        "npm-fflib-common": "^1.0.23",
         "qfpm": "^1.0.17"
     }
 }

@@ -1,5 +1,5 @@
 NPM SFDX Package Dependancy Resolution Proof of Concept
-1. Open git bash on windows with npm... and sfdx... and a default devhub org*
+1. Open git bash on windows with npm... and sfdx... and a default devhub org
 2. Clone repo
 
   ```bash
@@ -24,23 +24,8 @@ NPM SFDX Package Dependancy Resolution Proof of Concept
   npm run setup
   ```
 
-6. Oh no this package has multi-layered dependancies needed to install!
-  
-7. Install the npm-fflib-common dependancy
+6. You now have a scratch org ready for development with multiple layers of dependancies resolved
 
-  ```bash
-  npm install npm-fflib-common --save --only=prod
-  ```
-
-8. Setup again with dependacies installed
-
-  ```bash
-  npm run setup
-  ```
-
-9. You now have a scratch org ready for development with multiple layers of dependancies resolved
-
-*May work on linux though has not been tested
 
 Original README Below
 =====================
