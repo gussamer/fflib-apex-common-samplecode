@@ -23,16 +23,22 @@
  *  OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 **/
-
-public with sharing class AccountsService
+public with sharing class AccountsServiceImpl implements IAccountsService
 {
-	public static void updateOpportunityActivity(Set<Id> accountIds)
+	/**
+	 * Update last Opportunity activity on the related Accounts
+	 *
+	 * @param accountIds The account Ids of the records to update
+	 */
+	public void updateOpportunityActivity(Set<Id> accountIds)
 	{
-		service().updateOpportunityActivity(accountIds);
-	}
+		fflib_ISObjectUnitOfWork uow = Application.UnitOfWork.newInstance();
 
-	private static IAccountsService service()
-	{
-		return (IAccountsService) Application.Service.newInstance(IAccountsService.class);
+		IAccounts accounts = (IAccounts) Application.Domain.newInstance( accountIds );
+
+		accounts.updateOpportunityActivity();
+
+		uow.registerDirty(accounts.getRecords());
+		uow.commitWork();
 	}
 }

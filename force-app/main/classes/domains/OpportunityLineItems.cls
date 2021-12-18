@@ -41,7 +41,7 @@ public with sharing class OpportunityLineItems extends fflib_SObjectDomain
 	{
 		super(sObjectList);
 	}
-	
+
 	public void applyDiscount(IOpportunities opps, Decimal discountPercentage, fflib_ISObjectUnitOfWork uow)
 	{
 		// Opportunties by Id
@@ -52,13 +52,17 @@ public with sharing class OpportunityLineItems extends fflib_SObjectDomain
 		Decimal factor = Opportunities.calculateDiscountFactor(discountPercentage);
 		
 		// Adjust UnitPrice of each line according to Discount Type of Opportunity
-		for(OpportunityLineItem line : (List<OpportunityLineItem>) Records)
+		for(OpportunityLineItem line : (List<OpportunityLineItem>) this.records)
 		{
 			// Skip products that have not been approved for discounting
 			Opportunity opportunity = opportunitiesById.get(line.OpportunityId);
-			if(opportunity.DiscountType__c == 'Approved Products')
-				if(line.PricebookEntry.Product2.DiscountingApproved__c == false)
-					continue;			
+			if (opportunity.DiscountType__c == 'Approved Products')
+			{
+				if (line.PricebookEntry.Product2.DiscountingApproved__c == false)
+				{
+					continue;
+				}
+			}
 					
 			// Adjust UnitPrice
 			line.UnitPrice = line.UnitPrice * factor;

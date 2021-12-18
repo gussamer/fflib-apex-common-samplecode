@@ -24,15 +24,29 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 **/
 
-public with sharing class AccountsService
+@IsTest
+private class AccountsTest
 {
-	public static void updateOpportunityActivity(Set<Id> accountIds)
+	@IsTest
+	static void itShouldUpdateTheOpportunityActivity()
 	{
-		service().updateOpportunityActivity(accountIds);
+		// Given a domain with few Account records with an empty description field
+		Accounts domain = new Accounts(new List<Account>{	new Account(), new Account(), new Account()	});
+
+		// WHEN we set the description field to a value
+		System.Test.startTest();
+		domain.updateOpportunityActivity();
+		System.Test.stopTest();
+
+		// THEN the description should be updated
+		List<Account> result = domain.getAccounts();
+		System.assertEquals(3, result.size());
+		final String expectedValue = Accounts.OPPORTUNITY_RAISED_DESCRIPTION + ' ' + System.today();
+		for (Account record : result)
+		{
+			System.assertEquals(expectedValue, record.Description);
+		}
 	}
 
-	private static IAccountsService service()
-	{
-		return (IAccountsService) Application.Service.newInstance(IAccountsService.class);
-	}
+
 }
