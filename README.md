@@ -1,35 +1,3 @@
-NPM SFDX Package Dependancy Resolution Proof of Concept
-1. Open git bash on windows with npm... and sfdx... and a default devhub org
-2. Clone repo
-
-  ```bash
-  git clone [URL]
-  ```
-
-3. cd into repo
-
-  ```bash
-  cd fflib-apex-common-samplecode
-  ```
-
-4. Install the QRFDev Package Manager tools
-
-  ```bash
-  npm install qfpm --save --only=prod
-  ```
-
-5. Setup for development
-
-  ```bash
-  npm run setup
-  ```
-
-6. You now have a scratch org ready for development with multiple layers of dependancies resolved
-
-
-Original README Below
-=====================
-
 FinancialForce Apex Common Sample
 =================================
 =======
