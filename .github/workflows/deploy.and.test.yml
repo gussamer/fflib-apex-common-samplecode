@@ -19,8 +19,10 @@ jobs:
         uses: gussamer/setup-sfdx@v2 #We're using a fork of https://github.com/sfdx-actions/setup-sfdx for safety
         with:
           sfdx-auth-url: ${{ secrets.DEVHUB_SFDXURL }}
-      - name: Setup the config parameters needed
-        run: sf config set target-dev-hub SFDX-ENV --global #Even though the setup-sfdx action uses --setdefaultdevhubusername, it doesn't seem to stick since it uses --setdefaultusername so we brute force it here
+      - name: Set Default Devhub
+        run: sf force config set --global target-dev-hub=SFDX-ENV #Even though the setup-sfdx action uses --setdefaultdevhubusername, it doesn't seem to stick since it uses --setdefaultusername so we brute force it here
+      - name: Check Auth Orgs
+        run: sf org list --json
       - name: Create the scratch org
         run: sf org create scratch --definition-file config/project-scratch-def.json --set-default --duration-days 1 --no-track-source --alias fflibsamples
       - name: Clone fflib-apex-mocks repo
